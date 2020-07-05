@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solera | Audatex</title>
+    <link rel="stylesheet" href="./assets/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="min-vh-100">  
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white p-0 shadow">
+            <img class="navbar-brand ml-3" src="./assets/images/small-logo.png" id="logo_custom" width="10%"  alt="logo">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ml-auto mr-3">
+                    <a href="#" class="nav-item nav-link active"><i class="fa fa-home" aria-hidden="true"></i></a>
+                    <a href="#" class="nav-item nav-link"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <main class="container-fluid bg-light main-container">
+            <div class="row p-3">
+                <div class="col-sm-2 bg-white p-0 shadow-left rounded py-1">
+                        <nav class="mt-4 nav flex-column left-menu">
+                            <a class="nav-link active text-center" href="/">Call Details</a>
+                            <a class="nav-link text-center" href="#generalInfo">General Info</a>
+                            <a class="nav-link text-center" href="#last-service-details">Last Service Details</a>
+                          </nav>
+                </div>
+                <div class="col-sm-10" style='min-height: 550px'>
+                    <div class="d-flex flex-column justify-content-between border-top border-warning rounded main-content bg-white shadow p-2">
+                        
+                        <div class="row p-0">
+                            <div class="col-6">
+                                <form>
+                                    <div class="form-group form-row">
+                                        <label for="contact" class="col-sm-3 col-form-label-sm mb-0">Contact:</label>
+                                        <div class="col-sm-3">
+                                          <input type="text" readonly class="form-control-plaintext text-left form-control-sm" id="contact" value="Gautaum">
+                                        </div>
+
+                                        <label for="designation" class="col-sm-3 col-form-label-sm mb-0">Designation: </label>
+                                        <div class="col-sm-3">
+                                          <input type="text" readonly class="form-control-plaintext text-left form-control-sm" id="designation" value="MD">
+                                        </div>
+
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="service-type" class="col-form-label-sm">Service Type</label>
+                                        <select class="form-control" id="service-type" default='none'>
+                                          <option value=none>none</option>
+                                        </select>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label for="comment" class=" col-form-label-sm">Comments</label>
+                                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                                      </div>
+
+                                      <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="next-call-date" class="col-form-label-sm">Next Call</label>
+                                            <input type="date" class="form-control input-sm" id="next-call-date" placeholder="Password">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="service-type" class="col-form-label-sm">Purpose</label>
+                                            <select class="form-control" id="service-type" default='none'>
+                                                <option value=none>none</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-warning my-1 rounded-0 ml-1" style='color: white;'>Submit</button>
+                                      </div>
+                                </form>
+                            </div>
+                            <div class="col-6">
+                                    <ul class="timeline">
+                                        <li class="bg-light rounded p-1 ml-3 arrow shadow-sm">
+                                            <div class="timeline-panel">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="small text-primary">Akansha Bisht</p>
+                                                    <p class="small text-primary">14-05-2020 03:38:58</p>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted"><small><u>Payment</u></small></span>
+                                                    <span class="text-muted"> - Follow on regarding payment</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="bg-light rounded p-1 ml-3 arrow shadow-sm">
+                                            <div class="timeline-panel">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="small text-primary">Akansha Bisht</p>
+                                                    <p class="small text-primary">14-05-2020 03:38:58</p>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted"><small><u>Payment</u></small></span>
+                                                    <span class="text-muted"> - Follow on regarding payment</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="bg-light rounded p-1 ml-3 arrow shadow-sm">
+                                            <div class="timeline-panel">
+                                                <div class="d-flex justify-content-between">
+                                                    <p class="small text-primary">Akansha Bisht</p>
+                                                    <p class="small text-primary">14-05-2020 03:38:58</p>
+                                                </div>
+                                                <div>
+                                                    <span class="text-muted"><small><u>Payment</u></small></span>
+                                                    <span class="text-muted"> - Follow on regarding payment</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div class="col-sm-2 btn-group p-0">
+                                <button type="button" class="btn btn-sm btn-outline-dark" disabled>First</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark">Next</button>
+                                <button type="button" class="btn btn-sm btn-outline-dark rounded-0" disabled>Previous</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3 text-muted small">Copyright &copy; 2020:
+            <a href="/home"> Audatex</a>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>
